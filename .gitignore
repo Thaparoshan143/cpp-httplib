@@ -1,0 +1,11 @@
+example
+
+.vscode
+.DS_Store
+
+# premake temp files..
+Makefile
+**.make
+obj
+bin
+*.pem
