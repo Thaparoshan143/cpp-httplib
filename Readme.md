@@ -26,6 +26,18 @@ git submodule add -b sm https://github.com/Thaparoshan143/cpp-httplib /path/to/s
 
 <hr />
 
+**Requirements** 
+
+All lib have deafult search path of homebrew. so, install the required packages from brew..
+```bash
+brew install openssl # if ssl used..
+# if zlib used
+# brew install zlib .. and so on .. (also make sure to link it..)
+```
+
+#note: if search path is different, update in premake with respective links..
+
+
 > [!IMPORTANT]
 > Generation of the certificate is required for ssl usage.
 
