@@ -1,17 +1,16 @@
-workspace "httplib-ws"
+workspace "temp"
     configurations { "Release" }
 
 project "httplib-pr"
-    kind "consoleApp"
+    kind "sharedLib"
     language "c++"
 
-    cppdialect "c++11"
-
-    files { "*.cpp", "*.hpp" }
+    files { "httplib.cpp" }
     removefiles { "./example/**" }
 
     includedirs { "./", "/opt/homebrew/include/", "/opt/homebrew/include/openssl" }
 
+    -- this links can be migrate to the top level premake script..
     configurations { "macosx" }
         -- where static/dynamic lib might be located.. (search path..)
         libdirs { "/opt/homebrew/lib", "/opt/local/lib", "/usr/local/lib" }
